@@ -69,7 +69,7 @@ jobs:
           project-path: marktext/packages/desktop
           output-path: ${{ github.workspace }}/native-dist
           version: ${{ inputs.nativeboat-version || 'latest' }}
-          analyze: 'true'
+          analyze: 'false'
 
       # The executable needs the other files in the output folder, so only the
       # whole folder is published, as a ZIP.
